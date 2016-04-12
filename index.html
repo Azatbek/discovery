@@ -1,0 +1,714 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1;user-scalable=0;">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Горячий отдых на Иссык-Куле со скидкой 35%</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/styles.css" rel="stylesheet">
+	<style>
+		@font-face {
+    font-family: Bouquet; /* Гарнитура шрифта */
+    src: url(fonts/bouquet.otf); /* Путь к файлу со шрифтом */
+   }
+	</style>
+    <!-- Custom Fonts -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" style="text-align:center;">
+                <ul class="nav navbar-nav">
+                    <!-- Hidden li included to remove active class from about link when scrolled up past about section -->
+                    <li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#page-top">Главная</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#features">Услуги</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#locations">Отели</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#howwework">Как мы работаем</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#testimonials">Отзывы</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#gallery">Галерея</a>
+                    </li>
+					<li>
+                        <a class="page-scroll" href="#map">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Шапочка -->
+    <header class="intro">
+        <div class="intro-body">
+            <div class="container">
+			<div style="position:absolute;left:54%;top:80px;z-index:121; font-size: 20px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Закажи горячий тур по телефону: <br><center>+7 727 50 81 08</center>
+				<a class="btn btn-default" data-target="#OrderToCall" data-toggle="modal">Заказать обратный звонок</a></div>
+                <div class="row">
+                    <div class="col-md-12" style="padding-top:150px;">
+                        <h1>Горячий отдых на <font color="#e8ee88">Иссык-Куле</font> со скидкой <font color="#e8ee88">35%</font></h1>
+                        <center><p class="ribbon">Незабываемый летний отдых от 6000 тг.</p></center>
+                    </div>
+                </div>
+					<div class="col-lg-8 col-lg-offset-2" style="padding-bottom:20px;">
+					<div class="formblock1" style="background-color: #D8D8D8  ;">
+					<div class="col-md-6 col-xs-12" style="padding-top:50px;">
+						<div class="row" align="center">
+						<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45); font-size: 22px;">Успейте забронировать свой отдых<br>в Иссык-Куле со скидкой 35%</p><i class="fa fa-arrow-right fa-4x"></i><br>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 contact"><br>
+					<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Заполните форму<br> чтобы получить скидку</p>
+					<form action="submit.php" method="post" style="padding: 2%;">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="dep_date" class="form-control input-lg" placeholder="Дата выезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="arriv_date" class="form-control input-lg" placeholder="Дата приезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="userName" id="display_name" class="form-control input-lg" placeholder="Имя">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phoneNumber" id="phone" class="form-control input-lg phoneNumber" placeholder="Телефон">
+								</div>
+								<div class="form-group">
+									<button class="btn btn-default btn-lg" name="OrderToDiscount" style="width:100%;" type="submit" onclick="javascript:alert('Спасибо, Ваша заявка принята');">Получить скидку</button>
+								</div>
+
+					</form>
+					</div>
+					</div>
+				</div>
+			</div>
+        </div>
+    </header>
+
+    <!-- О нас -->
+    <section id="about" class="container content-section text-center">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2>Коротко <font color="#e8ee88">о нас</font> в цифрах</h2>
+			<div class="row" id="aboutus">
+				<div class="col-md-3 col-xs-12">
+					<i class="sprite sprite-wave"><p>&nbsp;&nbsp;<font style="font-family:verdana; font-size:23px;">Более</font> <br><font size="35px;">20</font></p></i>
+					<font color="#1d857e" style="font-size: 18px;">лет приносим людям<br>удовольствие и пользу</font>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<i class="sprite sprite-wave" ><p>&nbsp;&nbsp;<font style="font-family:verdana; font-size:23px;">Более</font> <br><font size="35px;">25</font></p></i>
+					<font color="#1d857e" style="font-size: 18px;">отелей <br>на выбор</font>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<i class="sprite sprite-wave"><p>&nbsp;&nbsp;<font style="font-family:verdana; font-size:23px;">Более</font> <br><font size="35px;">3000</font></p></i>
+					<font color="#1d857e" style="font-size: 18px;">клиентов получили незабываемый отдых</font>
+				</div>
+				<div class="col-md-3 col-xs-12">
+					<i class="sprite sprite-wave"><p>&nbsp;&nbsp;<font style="font-family:verdana; font-size:23px;">Более</font> <br><font size="35px;">80%</font></p></i>
+					<font color="#1d857e" style="font-size: 18px;">клиентов обращаются<br>к нам повторно</font>
+				</div>
+			</div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="content-section text-center">
+        <div class="support-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1" align="center">
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Какие <font color="#e8ee88">услуги</font> мы оказываем</h2>
+					<div class="row" style="padding-top:5%;">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/divan.png" height="100%" width="100%">
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%;  text-align: left;">
+								<p class="title">Преодоставление всех отелей, пансионатов и зон отдыха</p>
+								<p class="paragraph">Выбирая нашу компанию вы получаете возможность забронировать любой из 25 отелей, пансионатов и зон отдыха по наилучшей цене. </p>
+							</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/avto.png" height="100%" width="100%">
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%; text-align: left;">
+								<p class="title">Сопровождение</p>
+								<p class="paragraph">Консультация профессионалов по организации тура. Ежедневная перевозка людей на собственных автобусах. Предоставление транспорта для поездок по Казахстану </p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-top:2%;">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/gora.png" height="100%" width="100%" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%;  text-align: left;">
+								<p class="title">Экскурсии и экспедиции</p>
+								<p class="paragraph">Организация экскурсий и экспедиций. Предоставление переводчиков, гидов и инструкторов. Консультации по научным турам. </p>
+							</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/volley.png" height="100%" width="100%">
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%; text-align: left;">
+								<p class="title">Организация и проведение семинаров</p>
+								<p class="paragraph">Мы организовываем тимбилдинги, пикники на природе, пэйнтбол, спортивные мероприятия и т.д. </p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-top:2%;">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/kon.png" height="100%" width="100%" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%;  text-align: left;">
+								<p class="title">Конная езда</p>
+								<p class="paragraph">Любителей конной езды ждут невероятно интересные туры по горам Заилийского Алатау в том числе конные переходы на озеро Иссык-Куль </p>
+							</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/compa.png" height="100%" width="100%">
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%; text-align: left;">
+								<p class="title">Приключенческий тур</p>
+								<p class="paragraph">Вы по-настоящему окунетесь в разнообразные приключения, которые останутся навсегда в ваших воспоминаниях, как одни из лучших периодов жизни. </p>
+							</div>
+							</div>
+						</div>
+					</div>
+					<div class="row" style="padding-top:2%;">
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/oiu.png" height="100%" width="100%" >
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%;  text-align: left;">
+								<p class="title">Этнографические туры</p>
+								<p class="paragraph">Знакомят с многогранной культурой и историей Киргизов, их традициями, бытом и национальными особенностями. </p>
+							</div>
+							</div>
+						</div>
+						<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+							<div class="row">
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6">
+								<img src="img/korabl.png" height="100%" width="100%">
+							</div>
+							<div class="col-xs-6 col-sm-6 col-md-6 col-lg-6" style="padding-top:3%; text-align: left;">
+								<p class="title">Аренда снаряжения</p>
+								<p class="paragraph">Аренда транспорта, снаряжения, рафтов, байдарок, плота, палаток и
+небольших японских электростанций  </p>
+							</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row" style="padding-top:2%;">
+						<a class="btn btn-default" data-target="#KnowMore" data-toggle="modal" style="font-size: 20px; width:30%; padding:15px;">УЗНАТЬ ПОДРОБНЕЕ</a>
+					</div>
+					<div class="row" style="padding-top:2%; padding-bottom:20px;">
+					<div class="formblock1" style="background-color: #D8D8D8;">
+					<div class="col-md-10 col-md-offset-1">
+					<div class="col-md-6 col-xs-12" style="padding-top:50px;">
+						<div class="row" align="left" style="padding-left: 5%; padding-right: 10%;">
+						<p style="font-size: 20px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Купившие	путевку  у  нас  получают
+						скидку  10% на проезд  в обе стороны!
+						</p>
+						<br>
+						<p style="font-size: 22px; text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
+							Все, что вам нужно	-
+							удостоверение личности и
+							упаковать чемодан!</p>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 contact">
+					<p style="margin-top:10px;margin-bottom:0px; text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Заполните форму<br> чтобы получить скидку!</p>
+					<form action="submit.php" method="post" style="padding: 5%;">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="dep_date" class="form-control input-lg" placeholder="Дата выезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="arriv_date" class="form-control input-lg" placeholder="Дата приезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="userName" id="display_name" class="form-control input-lg" placeholder="Имя">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phoneNumber" id="phone" class="form-control input-lg phoneNumber" placeholder="Телефон">
+								</div>
+								<div class="form-group">
+									<button class="btn btn-default btn-lg" name="OrderToDiscount" style="width:100%;" type="submit" onclick="javascript:alert('Спасибо, Ваша заявка принята');">Получить скидку</button>
+								</div>
+
+					</form>
+					</div>
+					</div>
+				</div>
+				</div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- Где можно поселиться -->
+    <section id="locations" class="content-section text-center" style="min-height:660px;">
+        <div class="location-section">
+            <div class="container">
+                <div class="col-lg-12">
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Где можно <font color="#e8ee88">поселиться</font> на <font color="#e8ee88">Иссык-Куле?</font></h2>
+                    <ul class="location-filter">
+                    <li><a class="btn btn-primary active" data-filter="*">Все</a></li>
+                    <li><a class="btn btn-primary" data-filter=".pansionat">Пансионаты</a></li>
+                    <li><a class="btn btn-primary" data-filter=".hotel">Отели</a></li>
+					<li><a class="btn btn-primary" data-filter=".relax">Центры отдыха и санаторий</a></li>
+                </ul><!--/#location-filter-->
+				<ul class="location-items col-4">
+                    <li class="location-item hotel">
+                        <div class="item-inner">
+						<font color="#004f4a">Дельфин Делюкс</font>
+                            <div class="location-image">
+                                <img src="img/hotels/delphin-deluxe.jpg" alt="">
+                            </div>
+                        </div>
+						<font color="#ff0000">Скидка с 10.07 $24</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                    <li class="location-item relax">
+                        <div class="item-inner">
+						<font color="#004f4a">Радуга</font>
+                            <div class="location-image">
+                                <img src="img/hotels/raduga.jpg" alt="">
+                            </div>
+                        </div>
+						<font color="#ff0000">Скидка с 17.07 $67</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                    <li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Солемар</font>
+                            <div class="location-image">
+                                <img src="img/hotels/solemar.jpg" alt="">
+                            </div>
+                        </div>
+						<font color="#ff0000">Скидка с 18.07 $56</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                    <li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Золотые пески</font>
+                            <div class="location-image">
+                                <img src="img/hotels/zolotye.jpg" alt="">
+                            </div>
+                        </div>
+						<font color="#ff0000">Скидка с 01.07 $23</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                    <li class="location-item relax">
+                        <div class="item-inner">
+						<font color="#004f4a">Гос.резиденция</font>
+                            <div class="location-image">
+                                <img src="img/hotels/gosrezidence.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 01.07 $42</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                    <li class="location-item hotel">
+                        <div class="item-inner">
+						<font color="#004f4a">Аккун</font>
+                            <div class="location-image">
+                                <img src="img/hotels/akkun.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 17.07 $55</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Аян ресорт</font>
+                            <div class="location-image">
+                                <img src="img/hotels/ayan.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 06.07 $32</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item hotel">
+                        <div class="item-inner">
+                            <div class="location-image">
+							<font color="#004f4a">Royal beach</font>
+                                <img src="img/hotels/royal.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 01.07 $68</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Синегорье</font>
+                            <div class="location-image">
+                                <img src="img/hotels/sinegorie.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 11.07 $42</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item relax">
+                        <div class="item-inner">
+						<font color="#004f4a">Чолпон ата</font>
+                            <div class="location-image">
+                                <img src="img/hotels/cholppon.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 01.07 $18</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Ак бермет</font>
+                            <div class="location-image">
+                                <img src="img/hotels/ak-bermet.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 10.07 $42</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+					<li class="location-item pansionat">
+                        <div class="item-inner">
+						<font color="#004f4a">Сайран</font>
+                            <div class="location-image">
+                                <img src="img/hotels/sairan.jpg" alt="">
+                            </div>
+                        </div>
+					<font color="#ff0000">Скидка с 10.07 $40</font><button class="btn btn-default" data-toggle="modal" data-target="#KnowMore"><font color="#004f4a">Узнать подробнее</font></button>
+                    </li><!--/.location-item-->
+                </ul>
+				<a class="btn btn-default" id="consultationBtn" style="width:40%; padding-top:10px; padding-bottom:10px; font-size:18px;" data-toggle="modal" data-target="#GetConsult">Получить консультацию</a>
+				<div class="col-lg-8 col-lg-offset-2" style="padding-bottom:20px;">
+					<div class="formblock1" style="background-color: #D8D8D8  ;">
+					<div class="col-md-6 col-xs-12" style="padding-top:50px;">
+						<div class="row" align="center">
+						<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45); font-size: 22px;">Купившие путевку у нас<br> получают скидку 10% на проезд в обе стороны</p><i class="fa fa-arrow-right fa-4x"></i><br>
+						</div>
+					</div>
+
+					<div class="col-md-6 col-xs-12 contact"><br>
+					<center><p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Заполните форму<br> чтобы получить скидку!</p></center>
+					<form action="submit.php" method="post" style="padding: 2%;">
+								<div class="row">
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="dep_date" id="dep_date" class="form-control input-lg" placeholder="Дата выезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+									<div class="col-xs-6 col-sm-6 col-md-6">
+										<div class="form-group">
+											<input type="text" name="arriv_date" id="arriv_date" class="form-control input-lg" placeholder="Дата приезда" onfocus="(this.type='date')">
+										</div>
+									</div>
+								</div>
+								<div class="form-group">
+									<input type="text" name="userName" id="display_name" class="form-control input-lg" placeholder="Имя">
+								</div>
+								<div class="form-group">
+									<input type="text" name="phoneNumber" id="phone" class="form-control input-lg phoneNumber" placeholder="Телефон">
+								</div>
+								<div class="form-group">
+									<button class="btn btn-default btn-lg" name="toOrder" style="width:100%;" type="submit">Получить скидку</button>
+								</div>
+
+					</form>
+					</div>
+					</div>
+				</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Иссык-Куль -->
+    <section id="kurort" class="content-section text-center">
+        <div class="kurort-section">
+            <div class="container">
+                <div class="col-lg-12 col-md-12">
+                    <h2>Иссык-Куль</h2>
+                    <div class="row" id="kurort-text">
+
+						<div class="col-md-6" style="width: 350px; margin-left: 130px; margin-top: 50px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
+												 По	числу	часов солнечного сияния
+						(2670-2880) побережье озера на
+						400-600 часов в год превосходит
+						курорты	 Крыма и	почти на 1 000
+						часов	в год - курорты Прибалтики
+						<br><div style="  margin-top: 120px; padding-left: 40px;">
+						Озеро Иссык-Куль издавна
+						привлекает	своими	природно-климатическими	условиями и неповторимой красотой.
+						</div>
+						</div>
+						<div class="col-md-6" style="margin-top: 80px; padding-left: 200px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
+										Горно-морской климат,  чистый воздух ,
+				обилие солнечного  тепла,  лечебная
+				минерализованная вода озера,  горячие
+				источники и лечебные грязи укрепляют
+				здоровье,  избавляют от недугов,стиму- лируют нормативные физиологические функции организма, повышают обмен веществ,  улучшают состав крови,  укрепляют кожу.
+										</div>
+
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- Как мы работаем -->
+   <section id="howwework" class="content-section text-center">
+        <div class="how-we-work-section">
+            <div class="container">
+                <div class="col-lg-12" style="padding-bottom:50px;">
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Как мы <font color="#e8ee88">работаем?</font></h2>
+                    <i class="sprite1 sprite-schema" align="center"></i>
+					<img style="position:absolute;left:-5%;top:40px;z-index:9;" src="img/kreslo.png" height="200px" width="158px">
+					<img style="position:absolute;left:43%;top:470px;z-index:9;" src="img/myach.png" height="98px" width="169px">
+					<img style="position:absolute;left:85%;top:100px;z-index:9;" src="img/banki.png" height="136px" width="139px">
+					<img style="position:absolute;left:68%;top:225px;z-index:9;" src="img/slansi.png">
+					<span style="position:absolute;left:13%;top:185px;z-index:8; color:#00b1a6; font-size: 18px;">Оставить заявку</span>
+					<span style="position:absolute;left:41.5%;top:185px;z-index:8; color:#00b1a6; font-size: 18px;">Наш менеджер<br>связывается с Вами</span>
+					<span style="position:absolute;left:72%;top:185px;z-index:8; color:#00b1a6; font-size: 18px;">Составление тура</span>
+					<span style="position:absolute;left:73%;top:410px;z-index:8; color:#00b1a6; font-size: 18px;">Собираем вещи</span>
+					<span style="position:absolute;left:15%;top:420px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Встреча на<br>Абая-Байтурсынова</span>
+					<span style="position:absolute;left:15%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Отправление туристов на<br>собственном автобусе</span>
+					<span style="position:absolute;left:46.5%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Отдых</span>
+					<span style="position:absolute;left:71%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: right;">Приезд на<br>нашем автобусе</span>
+					<a data-toggle="modal" data-target="#OrderToReserv" class="btn btn-default" style="position:absolute; left: 13.5%;top:210px;z-index:8; font-size: 18px;">Оставить</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+	<!-- Галерея -->
+    <section id="testimonials" class="content-section text-center">
+        <div class="testimonials-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Почитайте <font color="#e8ee88">отзывы</font> наших <font color="#e8ee88">клиентов</font></h2>
+					<div class="row">
+						<div class="col-lg-4"><img src="img/comment-author.png" height="250px"></div>
+					<div class="col-lg-8 testimonial-text" style="background-image:url(img/testimonials-back.jpg); height:250px; background-size:cover;">
+					<p style="font-size: 15px;">Отдыхал примерно в этих числах, сразу отзыв написать конечно же поленился:) сейчас знакомые собрались в те края - посоветовал им отель Дельфин де люкс, ну и заодно решил написать отзыв. Незнаю, что тут кому не нравится - помоему по соотношению цена/качество все просто супер, хозяева очень приветливые, в номерах чисто и есть все необходимое. Есть три бассеина два из них внутри 25 и 50 м европейского качества, на пляже стоит колесо обозрения высотой ого го и американские горки тоже не малых размеров. Одновременно с нами были товарищи с Омска, говорят который год останавливались только тут. Если поеду туда еще раз - выберу этот дельфин не раздумывая:)</p> </div>
+					</div>
+					<br>
+					<div class="row">
+					<div class="col-lg-8 testimonial-text" style="background-image:url(img/testimonials-back.jpg); height:250px; background-size:cover;">
+					<p style="font-size: 15px; text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Это было первое совместное путешествие с женой на годовщину свадьбы ) Очень порадовал теплый прием. Размещение было довольно быстрым, после завтрака мы уже обживали номер. В номере было очень уютно и комфортно. Отдельной похвалы достойны повара - питание разнообразное и очень вкусное! Хозяева порекомендовали воспользоваться услугами экскурсовода Радика, за что им огромное спасибо! Т.к приехать в Киргизию и не побывать на экскурсиях - это впустую потраченное время. Очень понравилась 2-х дневная экскурсия вокруг Иссык-Куля. В целом мы остались очень довольны отдыхом и собираемся посетить его с помощью вас)</p> </div>
+						<div class="col-lg-4"><img src="img/comment-author2.jpg" height="250px"></div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+	<!-- Галерея -->
+    <section id="gallery" class="content-section text-center">
+        <div class="gallery-section">
+            <div class="container">
+                <div class="col-lg-10 col-lg-offset-1">
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Наша <font color="#e8ee88">Галерея</font></h2>
+						<img src="img/gallery/1.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/2.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/3.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/4.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/5.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/6.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/7.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/8.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/9.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/10.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/11.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/12.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/13.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/14.jpg" width="300px" height="250px"/>
+						<img src="img/gallery/15.jpg" width="300px" height="250px"/>
+						<a data-target="#OrderToReserv" data-toggle="modal" class="btn btn-default" id="consultationBtn" style="width:30%; margin-top:30px;">Уже хочу туда!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div id="map">
+
+	<script type="text/javascript" charset="utf-8" src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=aaPQL3swzHlH9nC4RmDWmRrFeJop27xu&width=100%&height=450"></script>
+	</div>
+
+    <!-- Footer -->
+    <footer id="developer">
+		<div class="container text-center">
+			<div class="col-lg-12" style="padding-top: 20px;">
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4" >
+s				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+dsa				</div>
+				<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">
+					<span style="font-size: 27px;">dsadasssss<br>пн-пт с 9-20</span>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="js/jquery.easing.min.js"></script>
+
+	<!-- Isotope js JavaScript -->
+	<script src="js/jquery.isotope.min.js"></script>
+	<!-- MaskedInput js JavaScript -->
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<!-- Custom Theme JavaScript -->
+    <script src="js/custom.js"></script>
+	<script>
+		jQuery(function($){
+		   $(".phoneNumber").mask("+7 (999) 999-9999");
+		});
+	</script>
+
+	<div class="modal fade" id="OrderToCall">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" style="color:rgb(232, 238, 136);text-shadow: -2px -1px rgba(0,0,0,0.5); font-family:verdana; text-transform:none; text-align:center;">Отправьте нам свой номер телефона и мы Вам перезвоним!</h4>
+		  </div>
+		  <form method="post" action="submit.php">
+		  <div class="modal-body">
+				<input type="text" class="form-control" name="userName" placeholder="Имя" required>
+				<input type="text" class="form-control phoneNumber" name="phoneNumber" placeholder="Телефон" required>
+		   </div>
+		  <div class="modal-footer">
+			 <button type="submit" class="btn btn-default" onclick="javascript:alert('Спасибо, Ваша заявка принята');" name="OrderToCall" style="width:70%; padding-top:10px; padding-bottom:10px; font-size:18px;">Заказать звонок</button>
+		  </div>
+		  </form>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="KnowMore">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" style="color:rgb(232, 238, 136);text-shadow: -2px -1px rgba(0,0,0,0.5); font-family:verdana; text-transform:none; text-align:center;">Оставьте заявку, чтобы мы могли с Вами связаться!</h4>
+		  </div>
+		  <form method="post" action="submit.php">
+		  <div class="modal-body">
+				<input type="text" class="form-control" name="userName" placeholder="Имя" required>
+				<input type="text" class="form-control phoneNumber" name="phoneNumber" placeholder="Телефон" required>
+		   </div>
+		  <div class="modal-footer">
+			 <button type="submit" class="btn btn-default" onclick="javascript:alert('Спасибо, Ваша заявка принята');" name="OrderToDiscount" style="width:70%; padding-top:10px; padding-bottom:10px; font-size:18px;">Оставить заявку</button>
+		  </div>
+		  </form>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="GetConsult">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" style="color:rgb(232, 238, 136);text-shadow: -2px -1px rgba(0,0,0,0.5); font-family:verdana; text-transform:none; text-align:center;">Оставьте заявку, чтобы мы могли с Вами связаться и дать консультацию!</h4>
+		  </div>
+		  <form method="post" action="submit.php">
+		  <div class="modal-body">
+				<input type="text" class="form-control" name="userName" placeholder="Имя" required>
+				<input type="text" class="form-control phoneNumber" name="phoneNumber" placeholder="Телефон" required>
+		   </div>
+		  <div class="modal-footer">
+			 <button type="submit" class="btn btn-default" onclick="javascript:alert('Спасибо, Ваша заявка принята');" name="GetConsult" style="width:70%; padding-top:10px; padding-bottom:10px; font-size:18px;">Оставить заявку</button>
+		  </div>
+		  </form>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+	<div class="modal fade" id="OrderToReserv">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<h4 class="modal-title" style="color:rgb(232, 238, 136);text-shadow: -2px -1px rgba(0,0,0,0.5); font-family:verdana; text-transform:none; text-align:center;">Оставьте заявку, чтобы забронировать отдых!</h4>
+		  </div>
+		  <form method="post" action="submit.php">
+		  <div class="modal-body">
+				<input type="text" class="form-control" name="userName" placeholder="Имя" required>
+				<input type="text" class="form-control phoneNumber" name="phoneNumber" placeholder="Телефон" required>
+		   </div>
+		  <div class="modal-footer">
+			 <button type="submit" class="btn btn-default" onclick="javascript:alert('Спасибо, Ваша заявка принята');" name="OrderToReserv" style="width:70%; padding-top:10px; padding-bottom:10px; font-size:18px;">Оставить заявку</button>
+		  </div>
+		  </form>
+		</div><!-- /.modal-content -->
+	  </div><!-- /.modal-dialog -->
+	</div><!-- /.modal -->
+</body>
+
+</html>
