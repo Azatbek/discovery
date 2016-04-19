@@ -9,6 +9,13 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
+    <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox.css" media="screen" />
+
+    <script src="js/jquery-1.12.3.min.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.mousewheel-3.0.6.pack.js"></script>
+	<script type="text/javascript" src="js/fancybox/jquery.fancybox.js"></script>
+	
+
     <title>Горячий отдых </title>
 
     <!-- Bootstrap Core CSS -->
@@ -27,12 +34,16 @@
     <link href="http://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic" rel="stylesheet" type="text/css">
     <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	
+
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+
 
 </head>
 
@@ -80,34 +91,39 @@
     <header class="intro">
         <div class="intro-body">
             <div class="container">
-			<div style="position:absolute;left:54%;top:80px;z-index:121; font-size: 20px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Закажи горячий тур по телефону: <br><center>+7 727 50 81 08</center>
+			<div style="position:absolute;left:54%;top:80px;z-index:121; font-size: 20px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Закажи горячий тур по телефону: <br><center>+7 727 323 67 33</center><center>+7 702 777 18 80</center>
 				<a class="btn btn-default" data-target="#OrderToCall" data-toggle="modal">Заказать обратный звонок</a></div>
                 <div class="row">
                     <div class="col-md-12" style="padding-top:150px;">
-                        <h1>Горячий отдых на <font color="#e8ee88">Иссык-Куле</font> со скидкой <font color="#e8ee88">35%</font></h1>
-                        <center><p class="ribbon">Незабываемый летний отдых от 6000 тг.</p></center>
+                        <h1>Эксклюзивные путевки на <font color="#e8ee88">Алаколь</font></h1>
+                        <center><p class="ribbon" style="margin-top: 70px;">Незабываемый летний отдых от 7000 тг.</p></center>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12" style="margin-bottom: 30px;">
+                        <center><h2>База отдыха "Алмас Бриллиант"</h2></center>
                     </div>
                 </div>
 					<div class="col-lg-8 col-lg-offset-2" style="padding-bottom:20px;">
 					<div class="formblock1" style="background-color: #D8D8D8  ;">
 					<div class="col-md-6 col-xs-12" style="padding-top:50px;">
 						<div class="row" align="center">
-						<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45); font-size: 22px;">Успейте забронировать свой отдых<br>в Иссык-Куле со скидкой 35%</p><i class="fa fa-arrow-right fa-4x"></i><br>
+						<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45); font-size: 22px;">Успейте забронировать свой отдых<br>у нас со скидкой</p><i class="fa fa-arrow-right fa-4x"></i><br>
 						</div>
 					</div>
-
-					<div class="col-md-6 col-xs-12 contact"><br>
+				
+					<div class="col-md-6 col-xs-12 contact"><br>	
 					<p style="text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Заполните форму<br> чтобы получить скидку</p>
 					<form action="submit.php" method="post" style="padding: 2%;">
 								<div class="row">
 									<div class="col-xs-6 col-sm-6 col-md-6">
 										<div class="form-group">
-											<input type="text" name="dep_date" class="form-control input-lg" placeholder="Дата выезда" onfocus="(this.type='date')">
+											<input type="text" name="dep_date" class="form-control input-lg" placeholder="Дата заезда" onfocus="(this.type='date')">
 										</div>
 									</div>
 									<div class="col-xs-6 col-sm-6 col-md-6">
 										<div class="form-group">
-											<input type="text" name="arriv_date" class="form-control input-lg" placeholder="Дата приезда" onfocus="(this.type='date')">
+											<input type="text" name="arriv_date" class="form-control input-lg" placeholder="Дата выезда" onfocus="(this.type='date')">
 										</div>
 									</div>
 								</div>
@@ -118,7 +134,7 @@
 									<input type="text" name="phoneNumber" id="phone" class="form-control input-lg phoneNumber" placeholder="Телефон">
 								</div>
 								<div class="form-group">
-									<button class="btn btn-default btn-lg" name="OrderToDiscount" style="width:100%;" type="submit" onclick="javascript:alert('Спасибо, Ваша заявка принята');">Получить скидку</button>
+									<button class="btn btn-default btn-lg" name="OrderToDiscount" style="width:100%;" type="submit" onclick="javascript:alert('Спасибо, Ваша заявка принята');">Заказать обратный звонок</button>
 								</div>
 
 					</form>
@@ -482,31 +498,21 @@
         </div>
     </section>
 
-	<!-- Иссык-Куль -->
+	<!-- Алаколь -->
     <section id="kurort" class="content-section text-center">
         <div class="kurort-section">
             <div class="container">
                 <div class="col-lg-12 col-md-12">
-                    <h2>Иссык-Куль</h2>
+                    <h2>Информация об Алаколе</h2>
                     <div class="row" id="kurort-text">
 
-						<div class="col-md-6" style="width: 350px; margin-left: 130px; margin-top: 50px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
-												 По	числу	часов солнечного сияния
-						(2670-2880) побережье озера на
-						400-600 часов в год превосходит
-						курорты	 Крыма и	почти на 1 000
-						часов	в год - курорты Прибалтики
-						<br><div style="  margin-top: 120px; padding-left: 40px;">
-						Озеро Иссык-Куль издавна
-						привлекает	своими	природно-климатическими	условиями и неповторимой красотой.
+						<div class="col-md-6" style="width: 350px; margin-left: 130px; margin-top: 50px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">Озеро Алаколь, является вторым по величине среди внутренних водоёмов Казахстана и единственным глубоководным среди бессточных озёр республики. Находится озеро между снежными пиками Джунгарского Алатау и  хребтами Тарбагатая, на северо-востоке Алматинской области, занимает площадь 2700 кв.км. Глубина достигает 50 метров.
+						<br><div style="  margin-top: 120px; padding-left: 40px; margin-bottom: 50px;">
+						Вода Алаколя солёная, морская. Летом очень тёплая (средняя летняя температура 26 градусов).
 						</div>
 						</div>
-						<div class="col-md-6" style="margin-top: 80px; padding-left: 200px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
-										Горно-морской климат,  чистый воздух ,
-				обилие солнечного  тепла,  лечебная
-				минерализованная вода озера,  горячие
-				источники и лечебные грязи укрепляют
-				здоровье,  избавляют от недугов,стиму- лируют нормативные физиологические функции организма, повышают обмен веществ,  улучшают состав крови,  укрепляют кожу.
+						<div class="col-md-6" style="margin-top: 120px; padding-left: 200px;text-shadow: 1px 0px 6px rgba(0, 0, 0, 0.45);">
+										Чистый степной воздух, соленая вода, горячая вулканическая галька, с высоким содержанием кремния - это уникальное сочетание даров самой Природы  дают мощный оздоровительный  и профилактический эффект при проблемах с кожей, суставах,  женских и мужских проблемах, при пониженном иммунитете у детей и взрослых.
 										</div>
 
 					</div>
@@ -531,7 +537,7 @@
 					<span style="position:absolute;left:41.5%;top:185px;z-index:8; color:#00b1a6; font-size: 18px;">Наш менеджер<br>связывается с Вами</span>
 					<span style="position:absolute;left:72%;top:185px;z-index:8; color:#00b1a6; font-size: 18px;">Составление тура</span>
 					<span style="position:absolute;left:73%;top:410px;z-index:8; color:#00b1a6; font-size: 18px;">Собираем вещи</span>
-					<span style="position:absolute;left:15%;top:420px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Встреча на<br>Абая-Байтурсынова</span>
+					<span style="position:absolute;left:15%;top:420px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Встреча на<br>Абая-Гагарина</span>
 					<span style="position:absolute;left:15%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Отправление туристов на<br>собственном автобусе</span>
 					<span style="position:absolute;left:46.5%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: left;">Отдых</span>
 					<span style="position:absolute;left:71%;top:620px;z-index:8; color:#00b1a6; font-size: 18px; text-align: right;">Приезд на<br>нашем автобусе</span>
@@ -547,16 +553,16 @@
         <div class="testimonials-section">
             <div class="container">
                 <div class="col-lg-10 col-lg-offset-1">
-                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Почитайте <font color="#e8ee88">отзывы</font> наших <font color="#e8ee88">клиентов</font></h2>
+                    <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Почитайте <font color="#e8ee88">отзывы</font> наших <font color="#e8ee88">клиентов</font> из книги жалоб и предложений</h2>
 					<div class="row">
 						<div class="col-lg-4"><img src="img/comment-author.png" height="250px"></div>
 					<div class="col-lg-8 testimonial-text" style="background-image:url(img/testimonials-back.jpg); height:250px; background-size:cover;">
-					<p style="font-size: 15px;">Отдыхал примерно в этих числах, сразу отзыв написать конечно же поленился:) сейчас знакомые собрались в те края - посоветовал им отель Дельфин де люкс, ну и заодно решил написать отзыв. Незнаю, что тут кому не нравится - помоему по соотношению цена/качество все просто супер, хозяева очень приветливые, в номерах чисто и есть все необходимое. Есть три бассеина два из них внутри 25 и 50 м европейского качества, на пляже стоит колесо обозрения высотой ого го и американские горки тоже не малых размеров. Одновременно с нами были товарищи с Омска, говорят который год останавливались только тут. Если поеду туда еще раз - выберу этот дельфин не раздумывая:)</p> </div>
+					<p style="font-size: 15px;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> </div>
 					</div>
 					<br>
 					<div class="row">
 					<div class="col-lg-8 testimonial-text" style="background-image:url(img/testimonials-back.jpg); height:250px; background-size:cover;">
-					<p style="font-size: 15px; text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Это было первое совместное путешествие с женой на годовщину свадьбы ) Очень порадовал теплый прием. Размещение было довольно быстрым, после завтрака мы уже обживали номер. В номере было очень уютно и комфортно. Отдельной похвалы достойны повара - питание разнообразное и очень вкусное! Хозяева порекомендовали воспользоваться услугами экскурсовода Радика, за что им огромное спасибо! Т.к приехать в Киргизию и не побывать на экскурсиях - это впустую потраченное время. Очень понравилась 2-х дневная экскурсия вокруг Иссык-Куля. В целом мы остались очень довольны отдыхом и собираемся посетить его с помощью вас)</p> </div>
+					<p style="font-size: 15px; text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p> </div>
 						<div class="col-lg-4"><img src="img/comment-author2.jpg" height="250px"></div>
 					</div>
                 </div>
@@ -570,25 +576,43 @@
             <div class="container">
                 <div class="col-lg-10 col-lg-offset-1">
                     <h2 style="text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);">Наша <font color="#e8ee88">Галерея</font></h2>
-						<img src="img/gallery/1.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/2.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/3.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/4.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/5.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/6.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/7.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/8.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/9.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/10.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/11.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/12.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/13.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/14.jpg" width="300px" height="250px"/>
-						<img src="img/gallery/15.jpg" width="300px" height="250px"/>
+						<a class="gallery" rel="group" href="img/gallery/1.jpg"><img src="img/gallery/1.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/2.jpg"><img src="img/gallery/2.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/3.jpg"><img src="img/gallery/3.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/4.jpg"><img src="img/gallery/4.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/5.jpg"><img src="img/gallery/5.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/6.jpg"><img src="img/gallery/6.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/7.jpg"><img src="img/gallery/7.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/8.jpg"><img src="img/gallery/8.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/9.jpg"><img src="img/gallery/9.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/10.jpg"><img src="img/gallery/10.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/11.jpg"><img src="img/gallery/11.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/12.jpg"><img src="img/gallery/12.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/13.jpg"><img src="img/gallery/13.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/14.jpg"><img src="img/gallery/14.jpg" width="300px" height="250px"/></a>
+						<a class="gallery" rel="group" href="img/gallery/15.jpg"><img src="img/gallery/15.jpg" width="300px" height="250px"/></a>
+
 						<a data-target="#OrderToReserv" data-toggle="modal" class="btn btn-default" id="consultationBtn" style="width:30%; margin-top:30px;">Уже хочу туда!</a>
                 </div>
             </div>
         </div>
+     	<script type="text/javascript">
+		$(document).ready(function() {
+			$("a[rel=group]").fancybox({
+				'transitionIn'	:	'elastic',
+				'transitionOut'	:	'elastic',
+				'speedIn'		:	600, 
+				'speedOut'		:	200, 
+				'overlayShow'	:	false,
+				'showNavArrows' :   true,
+				helpers: {
+				    overlay: {
+				      locked: false
+				    }
+  }
+			});
+		});
+	</script>
     </section>
 
     <!-- Map Section -->
@@ -613,25 +637,24 @@ dsa				</div>
 	</footer>
 
     <!-- jQuery -->
-    <script src="js/jquery.js"></script>
-
-    <!-- Bootstrap Core JavaScript -->
+    
+     <!-- Bootstrap Core JavaScript -->
     <script src="js/bootstrap.min.js"></script>
-
-    <!-- Plugin JavaScript -->
+	<!-- Plugin JavaScript -->
     <script src="js/jquery.easing.min.js"></script>
-
 	<!-- Isotope js JavaScript -->
 	<script src="js/jquery.isotope.min.js"></script>
 	<!-- MaskedInput js JavaScript -->
 	<script src="js/jquery.maskedinput.min.js"></script>
 	<!-- Custom Theme JavaScript -->
     <script src="js/custom.js"></script>
+
 	<script>
 		jQuery(function($){
 		   $(".phoneNumber").mask("+7 (999) 999-9999");
 		});
 	</script>
+
 
 	<div class="modal fade" id="OrderToCall">
 	  <div class="modal-dialog">

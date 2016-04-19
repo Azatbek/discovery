@@ -550,6 +550,7 @@ body {
 	-webkit-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    background-position: center bottom;
     -o-background-size: cover;
 }
 #kurort-text {
