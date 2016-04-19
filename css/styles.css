@@ -218,7 +218,7 @@ a:focus {
     -moz-animation-timing-function: linear;
 }
 
-@-webkit-keyframes pulse {    
+@-webkit-keyframes pulse {
     0% {
         -webkit-transform: scale(1);
         transform: scale(1);
@@ -235,7 +235,7 @@ a:focus {
     }
 }
 
-@-moz-keyframes pulse {    
+@-moz-keyframes pulse {
     0% {
         -moz-transform: scale(1);
         transform: scale(1);
@@ -259,9 +259,7 @@ a:focus {
 .location-section {
     width: 100%;
     color: #fff;
-    background: url(../img/6.jpg) no-repeat center bottom scroll;
-    background-color: #fff;
-	background-size:100% 60%;
+    background: url(../img/location.png) repeat;
 }
 
 #map {
@@ -388,14 +386,10 @@ body {
 	max-height:320px;
 }
 .sprite {
-    background-image: url(../img/figures/wave.png);
-    background-repeat: no-repeat;
-    display: block;
-}
-
-.sprite-wave {
-    width: 258px;
-    height: 207px;
+  background-image: url(../img/figures/wave.png);
+  background-repeat: no-repeat;
+  display: block;
+  background-position-x: 80px;
 }
 #aboutus p{
 	padding-top:120px;
@@ -567,7 +561,7 @@ body {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
-	
+
 }
 .testimonials-section h2{
 	color:#5fb8b2;
@@ -610,14 +604,14 @@ body {
 	color:#5fb8b2;
 }
 .support-section .title{
-	color:#d0d858; 
+	color:#d0d858;
 	font-size: 20px;
 	line-height: 1.3;
 	text-shadow: 1px 0px 1px rgba(0, 0, 0, 0.45);
 	font-weight: bold;
 }
 .support-section .paragraph{
-	color:#6b8f96; 
+	color:#6b8f96;
 	font-size: 17px;
 	line-height: 1.3;
 	text-shadow: 1px 0px 4px rgba(255, 255, 255, 0.45);
